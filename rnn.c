@@ -5,6 +5,9 @@
 #define lr 0.0001f
 #define EPOCHS 100
 
+/*
+NO Full BPTT  ( Store h[t], x[t], and backprop through time )
+*/
 double loss(double y_true, double y_pred);
 double tanh_derivative(double x);
 double loss_derivative(double y_true, double y_pred);
